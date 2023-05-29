@@ -189,6 +189,8 @@ dataset:
 
 #### 2) Train
 ```bash
+python train.py -p bdd100k -c 3 -n 16 -b 16 --lr 1e-5 --num_epochs 200
+ 
 python train.py -p bdd100k        # your_project_name
                 -c 3              # coefficient of effnet backbone, result from paper is 3
             OR  -bb repvgg_b0     # change your backbone with timm
